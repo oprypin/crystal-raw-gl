@@ -1,4 +1,9 @@
-@[Link("GL")]
+ifdef darwin
+  @[Link(framework: "OpenGL")]
+else
+  @[Link("GL")]
+end
+
 lib GL
   VERSION_1_1 = 1
   VERSION_1_2 = 1
