@@ -1400,8 +1400,8 @@ lib GL
   alias PFNGLBLENDCOLORPROC = (Float, Float, Float, Float) -> Void
   alias PFNGLBLENDEQUATIONPROC = Enum -> Void
   VERSION_1_5 = 1
-  alias Sizeiptr = LibC::PtrDiffT
-  alias Intptr = LibC::PtrDiffT
+  alias Sizeiptr = LibC::SSizeT
+  alias Intptr = LibC::SSizeT
   BUFFER_SIZE = 0x8764_u32
   BUFFER_USAGE = 0x8765_u32
   QUERY_COUNTER_BITS = 0x8864_u32
@@ -3796,8 +3796,8 @@ lib GL
   alias PFNGLWEIGHTPOINTERARBPROC = (Int, Enum, Sizei, Void*) -> Void
   alias PFNGLVERTEXBLENDARBPROC = Int -> Void
   ARB_VERTEX_BUFFER_OBJECT = 1
-  alias SizeiptrARB = LibC::PtrDiffT
-  alias IntptrARB = LibC::PtrDiffT
+  alias SizeiptrARB = LibC::SSizeT
+  alias IntptrARB = LibC::SSizeT
   BUFFER_SIZE_ARB = 0x8764_u32
   BUFFER_USAGE_ARB = 0x8765_u32
   ARRAY_BUFFER_ARB = 0x8892_u32
