@@ -1,8 +1,8 @@
-ifdef darwin
+{% if flag?(:darwin) %}
   @[Link(framework: "OpenGL")]
-else
+{% else %}
   @[Link("GL")]
-end
+{% end %}
 
 lib GL
   VERSION_1_1 = 1
