@@ -1,2 +1,7 @@
 name: crystal-raw-gl
 version: 0.1.0
+
+authors:
+  - Oleh Prypin <oleh@pryp.in>
+
+crystal: '>= 0.25.1'
